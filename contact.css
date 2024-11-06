@@ -1,0 +1,89 @@
+.hero {
+    background-image: url('../public/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+    z-index: 1; /* Lower than navbar */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Same z-index as hero */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #ff9e1e !important;
+    border-color: #ff9e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #e59435 !important;
+    border-color: #e59435 !important;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none;
+}
+
+.form-control:focus {
+    border-color: #ff9e1e;
+    box-shadow: 0 0 5px rgba(255, 158, 30, 0.5);
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.contact-section .form-control:focus {
+    border-color: #ff9e1e;
+    box-shadow: 0 0 0 0.2rem rgba(255, 158, 30, 0.25);
+}
+
+.contact-section .btn-primary {
+    background-color: #ff9e1e;
+    border-color: #ff9e1e;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #e59435;
+    border-color: #e59435;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none; /* Hidden by default */
+}
+
+.form-control:focus {
+    border-color: #ff9e1e;
+    box-shadow: 0 0 5px rgba(255, 158, 30, 0.5);
+}
+
+.rounded-corners {
+    border-top-right-radius: 20px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 20px; /* Adjust the radius as needed */
+}

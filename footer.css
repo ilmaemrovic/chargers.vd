@@ -1,0 +1,31 @@
+/* Footer Styles */
+footer {
+    background-color: #ffa42d; /* Orange background */
+}
+
+footer .container {
+    max-width: 800px; /* Center content */
+}
+
+footer p {
+    margin-bottom: 0.5rem; /* Adjust spacing */
+}
+
+.contact-container {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+}
+
+.contact-container p {
+    margin-bottom: 0; /* Remove margin from paragraph */
+}
+
+.contact-container a {
+    font-weight: bold; /* Make email stand out */
+    text-decoration: underline; /* Underline email */
+}
+
+.contact-container a:hover {
+    color: #e59435; /* Change color on hover */
+}

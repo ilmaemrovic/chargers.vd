@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="login-title"></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">  
+        <div class="row login-container w-100">
+            <div class="col-lg-6 col-md-7 col-sm-12 login-form p-5">
+                <h2 data-i18n="welcome_login"></h2>
+                <hr>
+                <form>
+                    <input type="text" class="form-control mb-3" data-i18n="[placeholder]username" placeholder="" required>
+                    <input type="password" class="form-control mb-3" data-i18n="[placeholder]password" placeholder="" required>
+
+       
+                    <div class="mt-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="public/flags/english.png" alt="English" width="20" height="14">
+                                    <p data-i18n="english"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="public/flags/serbian.png" alt="Serbian" width="20" height="14">
+                                    <p data-i18n="serbian"></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100" data-i18n="log-in"></button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-md-5 d-none d-md-flex login-image align-items-center justify-content-center text-center">
+                <div>
+                    <h4 data-i18n="save-energy"></h4>
+                    <p data-i18n="save-energy-text"></p>
+                    <div class="quote-author" data-i18n="save-energy-quote"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/translation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

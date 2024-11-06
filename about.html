@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about-title"></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="public/logo-energy.png" alt="Electric Logo" id="navbar-logo" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="home"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html" data-i18n="about"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stations.html" data-i18n="stations"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="electric-cars.html" data-i18n="electric-cars-nav"></a>
+                    </li>
+                    <!-- Language Picker Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="public/flags/english.png" alt="English" width="20" height="14">
+                                    <p data-i18n="english"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="public/flags/serbian.png" alt="Serbian" width="20" height="14">
+                                    <p data-i18n="serbian"></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-md btn-primary" data-i18n="contact-us"></a>
+            </div>
+        </div>
+    </nav>    
+
+        <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4" data-i18n="about-us"></h1>
+            <p class="lead hero-text" data-i18n="about-us-text"></p>
+        </div>
+    </section>
+    
+        <!-- About Us Section with Image -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="public/electric-car-1.jpg" alt="About Us Image" class="about-image">
+                </div>
+                <div class="col-md-6">
+                    <h2 data-i18n="about-us-image-header"></h2>
+                    <p class="about-text" data-i18n="about-us-image-text">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h5 data-i18n="env-friendly"></h5>
+                    <p data-i18n="env-friendly-text"></p>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <i class="fas fa-coins"></i>
+                    <h5 data-i18n="cost-effective"></h5>
+                    <p data-i18n="cost-effective-text"></p>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <i class="fas fa-car"></i>
+                    <h5 data-i18n="quiet-efficient"></h5>
+                    <p data-i18n="quiet-efficient-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="orange-bg text-white">
+        <div class="container text-center py-4">
+            <p class="mb-1" data-i18n="footer-text">© 2024 Sustainable Energy DUNP Project. All Rights Reserved.</p>
+            <div class="contact-container">
+                <p class="mb-0" data-i18n="contact-us">Contact Us:</p>
+                <a href="mailto:emrovicilma@gmail.com" class="text-white text-decoration-none ms-2">emrovicilma@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/translation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

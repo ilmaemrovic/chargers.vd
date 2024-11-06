@@ -1,0 +1,95 @@
+.hero {
+    background-image: url('../public/windmills.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+    z-index: 1; /* Lower than navbar */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Same z-index as hero */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #ff9e1e !important;
+    border-color: #ff9e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #e59435 !important;
+    border-color: #e59435 !important;
+}
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.benefit-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.benefit-card h5 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.benefit-card i {
+    font-size: 50px;
+    color: #ff9e1e;
+    margin-bottom: 20px;
+}
+
+.benefit-card a {
+    color: #ff9e1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.benefit-card a:hover {
+    text-decoration: underline;
+}
+
+.benefit-card p {
+    color: #555;
+    flex-grow: 1;
+}

@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #fae7d2;
+}
+
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Set full width by default */
+    max-width: 100%; /* No restriction on smaller screens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.login-form .form-control {
+    margin-bottom: 20px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.login-image {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('../public/login.jpg') no-repeat center center/cover;
+    color: white;
+    display: none; /* Hidden by default on mobile */
+}
+
+.login-image h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-image p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.login-image .quote-author {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #ff9e1e !important;
+    border-color: #ff9e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #e59435 !important;
+    border-color: #e59435 !important;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .login-container {
+        max-width: 700px; /* Set max width for tablets and larger */
+    }
+}
+
+@media (min-width: 992px) {
+    .login-container {
+        max-width: 600px; /* Set max width for large desktops */
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-container {
+        max-width: 750px; /* Further reduce the width for extra-large screens */
+    }
+
+    .login-form {
+        padding: 50px; /* Increase padding for better aesthetics on larger screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .login-image {
+        display: flex; /* Show image section on larger screens */
+    }
+}

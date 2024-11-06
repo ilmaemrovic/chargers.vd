@@ -1,0 +1,51 @@
+.hero {
+    background-image: url('../public/windmills.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+    z-index: 1; /* Lower than navbar */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Same z-index as hero */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #ff9e1e !important;
+    border-color: #ff9e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #e59435 !important;
+    border-color: #e59435 !important;
+}
+
+.faq-section .container {
+    max-width: 800px;
+}
+
+.img-fixed-height {
+    height: 300px; 
+    object-fit: cover; 
+    width: 100%; 
+}

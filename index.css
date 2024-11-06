@@ -1,0 +1,59 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('../public/windmills.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #ff9e1e !important;
+    border-color: #ff9e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #e59435 !important;
+    border-color: #e59435 !important;
+}
+
+.orange-bg {
+    background-color:#ff9e1e;
+    padding: 10px;
+    color: white;
+}
+
+.fixed-image {
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the given area */
+    width: 100%; /* Ensures the image width fits the card */
+}

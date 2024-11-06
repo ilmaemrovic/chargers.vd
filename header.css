@@ -1,0 +1,106 @@
+/* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s ease;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    /* Large screens: transparent navbar */
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: #fff
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 1.5rem;
+        color: #fff;
+    }
+    
+    /* Active nav-link customization */
+    .navbar-nav .nav-link.active {
+        color: white !important; /* Change the text color to white */
+        font-weight: bold
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    /* Medium and small screens: white background */
+    .navbar {
+        background-color: #ffffff !important;   
+    }
+    .navbar-brand {
+        font-weight: bold;
+        color: #000
+    }
+    .navbar-nav .nav-link {
+        margin-right: 1.5rem;
+        color: #000;
+    }
+    .navbar-nav .nav-link.active {
+        color: black !important; /* Change the text color to white */
+        font-weight: bold
+    }
+}
+
+/* Hover state for non-active links */
+.navbar-nav .nav-link:hover {
+    color: #ffb86b; /* Optional hover effect for non-active links */
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: #ffb86b !important; /* Change to orange on hover */
+}
+
+.navbar .dropdown-menu a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .dropdown-item img {
+    margin-right: 8px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-item p {
+    margin: 0;
+}
+
+/* Ensure the dropdown background and text color is orange when clicked */
+.navbar .dropdown-item:active,
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:hover {
+    background-color: #FFA500; /* Orange background */
+    color: white; /* White text */
+}
+
+/* If you want to change only the text color to orange on click, focus, or hover */
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:hover {
+    color: white; /* Orange text */
+    background-color: #FFA500; /* Keep background transparent or set to preferred color */
+}
+
+#navbar-logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Change logo for smaller screens */
+@media (max-width: 767px) {
+    #navbar-logo {
+        content: url('../public/logo-energy-black.png');
+    }
+}
